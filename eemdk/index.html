@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Electron Certificate</title>
+
+    <link rel="stylesheet" href="person-property-info-style.css">
+
+    <script src="JsBarcode.all.min.js"></script>
+    <script src="qrcode.min.js"></script>
+</head>
+<body>
+
+<div class="header-div">
+    <div class="login-header">Elektron Sertifikat Yoxlanışı</div>
+</div>
+
+<div class="service-name" id="qrText"></div>
+
+<div style="text-align:center;margin-top:20px;">
+    <div id="qrcode"></div>
+    <svg id="barcode"></svg>
+</div>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const qr = params.get("qr");
+
+    if (qr) {
+        document.getElementById("qrText").innerText = qr;
+
+        new QRCode(document.getElementById("qrcode"), {
+            text: qr,
+            width: 200,
+            height: 200
+        });
+
+        JsBarcode("#barcode", qr, {
+            format: "CODE128",
+            width: 2,
+            height: 60
+        });
+    } else {
+        document.getElementById("qrText").innerText = "QR parametri tapılmadı";
+    }
+</script>
+
+</body>
+</html>
