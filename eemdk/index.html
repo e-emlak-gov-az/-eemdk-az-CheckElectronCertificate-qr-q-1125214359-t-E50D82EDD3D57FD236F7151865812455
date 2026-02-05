@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>CheckElectronCertificate</title>
+
+    <!-- LOCAL CSS -->
+    <link href="Content/person-property-info-style.css" rel="stylesheet" />
+
+    <!-- LOCAL JS -->
+    <script src="Scripts/JsBarcode.all.min.js"></script>
+    <script src="Scripts/qrcode.min.js"></script>
+
+    <script>
+        function toggleWarningDiv() {
+            var el = document.getElementById("warning-div");
+            el.style.display = (el.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</head>
+
+<body style="min-width:800px">
+
+<div id="warning-div" style="margin-left:20%; padding:5px; display:none">
+    <h5 style="
+        margin-top:100px;
+        position: fixed;
+        width: 50%;
+        border-radius: 5px;
+        z-index: 9999;
+        background-color: darkred;
+        color: white;
+        text-align: center;
+        font-size: 19px;
+        padding: 10px;">
+        Hörmətli ərizəçi! <br><br>
+        Sistem üzrə texniki işlər aparılır. Müvəqqəti fasilələr mümkündür.
+        <br><br>
+        <button onclick="toggleWarningDiv()" style="
+            height:30px;
+            width:60px;
+            background:white;
+            border-radius:5px;
+            border:none;
+            font-size:16px;
+            cursor:pointer;">Bağla</button>
+    </h5>
+</div>
+
+<div class="row" style="margin:0; background-color:#f3fafe">
+    <div class="header-div">
+        <a href="#" class="header-a">
+            <img src="https://emlak.gov.az/photos/shares/system/logo.png" class="header-img">
+            <span class="header-text">
+                Azərbaycan Respublikası İqtisadiyyat Nazirliyi <br>
+                yanında Əmlak Məsələləri Dövlət Xidməti
+            </span>
+        </a>
+    </div>
+
+    <div class="service-name">
+        <span>Daşınmaz əmlakın mövcudluğu barədə arayışın alınması</span>
+    </div>
+</div>
+
+<div id="content" style="text-align:center">
+
+<style>
+table, th, td { border:1px solid black; border-collapse:collapse; }
+th { padding:10p
