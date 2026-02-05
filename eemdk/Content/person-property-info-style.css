@@ -1,0 +1,185 @@
+.login-header {
+    font-weight: bold;
+    font-family: Tahoma;
+    color: #3dbacc;
+    font-size: 15px;
+}
+
+.service-name {
+    background-color: #f3fafe !important;
+    border: 1px solid #d8d6d6;
+    padding: 10px;
+    font-size: 15px;
+    box-shadow: 0 0 5px;
+    font-style: italic;
+    text-align: center;
+}
+
+.exit-a {
+    text-decoration: none;
+    border: 1px solid;
+    box-shadow: 0 0 1px;
+    padding: 10px;
+    font-weight: bold;
+    color: darkred;
+    font-size: 10px;
+}
+
+.exit-div {
+    text-align: end;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.header-text {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 12px;
+    font-family:sans-serif;
+}
+
+.header-a {
+    display: table;
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px 20px 20px;
+}
+
+.header-img {
+    width: 60px;
+    display: table-cell;
+}
+
+.header-div {
+    text-align: -webkit-center;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: initial;
+}
+
+@media screen and (min-width:500px) {
+    .login-header {
+        font-weight: bold;
+        font-family: sans-serif;
+        color: #3dbacc;
+        font-size: 20px;
+    }
+
+    .service-name {
+        background-color: #f3fafe !important;
+        border: 1px solid #d8d6d6;
+        padding: 10px;
+        font-size: 18px;
+        box-shadow: 0 0 5px;
+        font-style: italic;
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    .exit-a {
+        text-decoration: none;
+        border: 1px solid;
+        box-shadow: 0 0 1px;
+        padding: 10px;
+        font-weight: bold;
+        color: darkred;
+        font-size: 12px;
+    }
+
+    .exit-div {
+        text-align: end;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+
+    .header-text {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: left;
+        font-size: 18px;
+        font-family: sans-serif;
+    }
+
+    .header-a {
+        display: table;
+        text-decoration: none;
+        color: black;
+        padding: 5px 20px 20px 20px;
+    }
+
+    .header-img {
+        width: 60px;
+        display: table-cell;
+    }
+
+    .header-div {
+        text-align: -webkit-center;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: initial;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .login-header {
+        font-weight: bold;
+        font-family: sans-serif;
+        color: #3dbacc;
+        font-size: 25px;
+    }
+
+    .service-name {
+        background-color: #f3fafe !important;
+        border: 1px solid #d8d6d6;
+        padding: 10px;
+        font-size: 22px;
+        box-shadow: 0 0 5px;
+        font-style: italic;
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    .exit-a {
+        text-decoration: none;
+        border: 1px solid;
+        box-shadow: 0 0 1px;
+        padding: 10px;
+        font-weight: bold;
+        color: darkred;
+        font-size: 15px;
+    }
+
+    .exit-div {
+        text-align: end;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+
+    .header-text {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: left;
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+
+    .header-a {
+        display: table;
+        text-decoration: none;
+        color: black;
+        padding: 5px 20px 20px 20px;
+    }
+
+    .header-img {
+        width: 100px;
+        display: table-cell;
+    }
+
+    .header-div {
+        text-align: -webkit-center;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: initial;
+    }
+}
